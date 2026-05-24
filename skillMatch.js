@@ -140,3 +140,26 @@ function classificarCompatibilidade(percentual){
 
     return "Baixa compatibilidade"
 }
+
+function encontrarMelhorVaga(resultadoVagas) {
+
+    return resultadoVagas.reduce((melhor, vaga) => {
+        return vaga.compatibilidade > melhor.compatibilidade ? vaga : melhor
+    })
+}
+
+function gerarRecomentacao(resultados){
+
+    const faltantes = resultados.flatMap(resultado => resultado.falta)
+
+    const recomendacao = []
+    
+    // Valida se o item já existe na recomendação, caso contrário, adiciona-lo
+    for (const item of faltantes) {
+        if (!recomendacao.includes(item)) {
+            recomendacao.push(item)
+        }
+    }
+    
+    return recomendacao
+}
