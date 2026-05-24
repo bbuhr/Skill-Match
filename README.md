@@ -1,8 +1,8 @@
-# SkillMatch JS
+# Skill-Match JS
 
 ## Sobre o projeto
 
-O SkillMatch JS é um simulador simples de compatibilidade entre um candidato e vagas de front-end júnior.
+O Skill-Match JS é um simulador simples de compatibilidade entre um candidato e vagas de front-end júnior.
 
 O projeto compara as habilidades do candidato com os requisitos das vagas e mostra:
 
