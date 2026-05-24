@@ -88,3 +88,12 @@ Para entender o processo passo a passo:
 * **Provedores (ISPs):** Empresas provedoras conectam sua casa ou celular à grande teia global.
 * **Modem e Roteador:** O modem traduz o sinal da rede externa para o seu computador. O roteador distribui essa conexão via Wi-Fi ou cabos para seus dispositivos.
 * **Navegador:** Aplicativos como o Chrome ou Edge funcionam como "tradutores". Eles solicitam os dados e montam o código para você visualizar em forma de texto e imagem.
+
+## Arquitetura Cliente-Servidor
+
+A web opera em um modelo de comunicação dividido em duas partes principais: o **cliente** e o **servidor**.
+
+* **Cliente:** É o dispositivo final que solicita os recursos (seu computador, celular ou navegador). Ele inicia a comunicação enviando uma requisição HTTP.
+* **Servidor:** É um computador potente que armazena os dados, arquivos e códigos do site. Ele processa a requisição do cliente e envia uma resposta de volta.
+* **A Requisição (Request):** O pedido feito pelo cliente (ex: clicar em um link ou digitar uma URL).
+* **A Resposta (Response):** O retorno enviado pelo servidor (ex: a página HTML, imagens ou dados JSON).
