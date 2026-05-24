@@ -1,22 +1,27 @@
 const candidato = {
   nome: "Ana",
   area: "Front-End",
-  habilidades: ["JavaScript", "GitHub", "Lógica de Programação", "Kanban"],
+  habilidades: [
+    "JavaScript",
+    "GitHub",
+    "Lógica de Programação",
+    "Kanban",
+    ],
   experienciaMeses: 3
-};
+}
 
 class Vaga {
     constructor(id, empresa, cargo, requisitos, salario, modalidade) {
-        this.id = id;
-        this.empresa = empresa;
-        this.cargo = cargo;
-        this.requisitos = requisitos;
-        this.salario = salario;
-        this.modalidade = modalidade;
+        this.id = id
+        this.empresa = empresa
+        this.cargo = cargo
+        this.requisitos = requisitos
+        this.salario = salario
+        this.modalidade = modalidade
     }
     
     exibirResumo() {
-        return `${this.cargo} na empresa ${this.empresa}`;
+        return `${this.cargo} na empresa ${this.empresa}`
     }
 }
 
@@ -30,12 +35,19 @@ class VagaFrontEnd extends Vaga {
         modalidade,
         nivel
     ) {
-        super(id, empresa, cargo, requisitos, salario, modalidade);
-        this.nivel = nivel;
+        super(
+            id,
+            empresa,
+            cargo,
+            requisitos,
+            salario,
+            modalidade,
+        )
+        this.nivel = nivel
     }
 
     exibirNivel() {
-        return `Nível da vaga: ${this.nivel}`;
+        return `Nível da vaga: ${this.nivel}`
     }
 }
 
@@ -44,7 +56,11 @@ const vagas = [
         1,
         "TechStart",
         "Desenvolvedor Front-End Júnior",
-        ["JavaScript", "GitHub", "Lógica de Programação"],
+        [
+            "JavaScript",
+            "GitHub",
+            "Lógica de Programação",
+        ],
         2500,
         "Remoto",
         "Júnior"
@@ -54,7 +70,11 @@ const vagas = [
         2,
         "CodeLab",
         "Estágio Front-End",
-        ["JavaScript", "Kanban", "GitHub"],
+        [
+            "JavaScript",
+            "Kanban",
+            "GitHub",
+        ],
         1800,
         "Híbrido",
         "Estágio"
@@ -64,18 +84,19 @@ const vagas = [
         3,
         "WebSolutions",
         "Programador JavaScript Júnior",
-        ["JavaScript", "Arrays", "Objetos", "Funções"],
+        [
+            "JavaScript",
+            "Arrays",
+            "Objetos",
+            "Funções",
+        ],
         3000,
         "Presencial",
         "Júnior"
     )
-];
+]
 
-function match(){
-    let tenho = []
-    let precisa = []
-
-    //os que faltam
+function match(tenho, precisa) {
 
     let falta = precisa.filter((item)=>{
         return !tenho.includes(item)
@@ -89,6 +110,23 @@ function match(){
 
     let compatibilidade = qtdPossui/qtd * 100
 
-    console.log(`Faltam ${falta}`)
-    console.log(`Possui ${qtdPossui} de ${qtd} itens, o que corresponde a ${compatibilidade}%.`)
+    return{
+        falta,
+        possui,
+        compatibilidade
+    }
 }
+
+function classificarCompatibilidade(percentual){
+    
+    if (percentual >= 80) {
+        return "Alta compatibilidade"        
+    }
+    
+    if (percentual >= 50) {
+        return "Média compatibilidade"
+    }
+
+    return "Baixa compatibilidade"
+}
+
