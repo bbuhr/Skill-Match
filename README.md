@@ -66,8 +66,6 @@ Para abrir, editar e **executar** este projeto direto no editor, recomendamos o 
 
 * **Prettier - Code formatter:** Garante a padronização visual automática do código JavaScript.
 * **JavaScript (ES6) code snippets:** Agiliza a escrita de blocos de código através de atalhos.
-* **Code Runner:** Permite rodar o arquivo `skillmatch.js` instantaneamente com um clique no botão "Play" ou usando o atalho `Ctrl + Alt + N`.
-* **Quokka.js:** Uma ferramenta fantástica de *scratchpad* que executa o código JavaScript em tempo real enquanto você digita, exibindo os resultados das variáveis e do console diretamente ao lado das linhas de código.
 * **Live Server (Opcional):** Caso você decida criar um arquivo `index.html` no futuro para carregar o seu script, esta extensão abre um servidor local que atualiza o navegador automaticamente a cada salvamento.
 
 ## Como a Internet Funciona?
