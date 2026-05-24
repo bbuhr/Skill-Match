@@ -96,6 +96,17 @@ const vagas = [
     )
 ]
 
+function criarContadorAnalises() {
+    let total = 0;
+
+    return function () {
+        total++;
+        return total;
+    };
+}
+
+const contadorAnalises = criarContadorAnalises()
+
 function match(tenho, precisa) {
 
     let falta = precisa.filter((item)=>{
@@ -129,4 +140,3 @@ function classificarCompatibilidade(percentual){
 
     return "Baixa compatibilidade"
 }
-
