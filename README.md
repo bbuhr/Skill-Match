@@ -66,8 +66,6 @@ Para abrir, editar e **executar** este projeto direto no editor, recomendamos o 
 
 * **Prettier - Code formatter:** Garante a padronização visual automática do código JavaScript.
 * **JavaScript (ES6) code snippets:** Agiliza a escrita de blocos de código através de atalhos.
-* **Code Runner:** Permite rodar o arquivo `skillmatch.js` instantaneamente com um clique no botão "Play" ou usando o atalho `Ctrl + Alt + N`.
-* **Quokka.js:** Uma ferramenta fantástica de *scratchpad* que executa o código JavaScript em tempo real enquanto você digita, exibindo os resultados das variáveis e do console diretamente ao lado das linhas de código.
 * **Live Server (Opcional):** Caso você decida criar um arquivo `index.html` no futuro para carregar o seu script, esta extensão abre um servidor local que atualiza o navegador automaticamente a cada salvamento.
 
 ## Como a Internet Funciona?
@@ -88,3 +86,12 @@ Para entender o processo passo a passo:
 * **Provedores (ISPs):** Empresas provedoras conectam sua casa ou celular à grande teia global.
 * **Modem e Roteador:** O modem traduz o sinal da rede externa para o seu computador. O roteador distribui essa conexão via Wi-Fi ou cabos para seus dispositivos.
 * **Navegador:** Aplicativos como o Chrome ou Edge funcionam como "tradutores". Eles solicitam os dados e montam o código para você visualizar em forma de texto e imagem.
+
+## Arquitetura Cliente-Servidor
+
+A web opera em um modelo de comunicação dividido em duas partes principais: o **cliente** e o **servidor**.
+
+* **Cliente:** É o dispositivo final que solicita os recursos (seu computador, celular ou navegador). Ele inicia a comunicação enviando uma requisição HTTP.
+* **Servidor:** É um computador potente que armazena os dados, arquivos e códigos do site. Ele processa a requisição do cliente e envia uma resposta de volta.
+* **A Requisição (Request):** O pedido feito pelo cliente (ex: clicar em um link ou digitar uma URL).
+* **A Resposta (Response):** O retorno enviado pelo servidor (ex: a página HTML, imagens ou dados JSON).
